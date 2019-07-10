@@ -1,0 +1,5 @@
+com\selenium\newtours\util\Utils.class
+com\cucumber\newtours\stepdefs\LoginStepDefinition.class
+com\cucumber\newtours\runner\TestFilghtRunner.class
+com\cucumber\newtours\stepdefs\UserRegistrationStepDefinition.class
+com\cucumber\newtours\pageobjects\ReservationPageObjects.class

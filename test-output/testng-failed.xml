@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [WheatherForeCast_Suite]">
+  <listeners>
+    <listener class-name="utilities.TestListener"/>
+    <listener class-name="utilities.AnnotationTransformer"/>
+  </listeners>
+  <test name="WheatherForeCastTest">
+    <classes>
+      <class name="TestAPIRequestExecution.TestCurrentWeatherData"/>
+      <class name="TestAPIRequestExecution.TestHourlyForeCast"/>
+    </classes>
+  </test> <!-- WheatherForeCastTest -->
+  <test name="WheatherForeCastTest(failed)">
+    <classes>
+      <class name="TestAPIRequestExecution.TestCurrentWeatherData">
+        <methods>
+          <include name="getFailedTestResult" invocation-numbers="0 0"/>
+          <include name="convertObjectIntoJsonString_JACKSON" invocation-numbers="0 0"/>
+        </methods>
+      </class> <!-- TestAPIRequestExecution.TestCurrentWeatherData -->
+    </classes>
+  </test> <!-- WheatherForeCastTest(failed) -->
+</suite> <!-- Failed suite [WheatherForeCast_Suite] -->

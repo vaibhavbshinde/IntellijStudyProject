@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional_Suite">
+    <test name = "Test">
+      <classes>
+          <class name="com.sample.testng.booking.BookFlight">
+              <methods>
+                  <!-- This exclude will exclude below mentioned test method from execution -->
+                  <exclude name="BookFlight_OneWay_TC1"></exclude>
+              </methods>
+          </class>
+
+          <class name="com.sample.testng.booking.BookHolidayPackage">
+              <methods>
+                  <!-- Using Regular Expression we can include/exclude multiple tescases instead of one by one so naming convention should be proper -->
+                  <exclude name="bookHolidayPackage.*"></exclude>
+              </methods>
+          </class>
+
+          <class name="com.sample.testng.booking.BookHotel"/>
+          <class name="com.sample.testng.booking.FlightStatus">
+              <methods>
+                  <!-- This include will include only single method from the FlightStatus Class -->
+                  <include name="testSearchToCity_TC3"></include>
+              </methods>
+          </class>
+
+          <class name="com.java.general.study.BubbleSort"/>
+          <class name="com.java.general.study.FibbonacciSeries"/>
+
+      </classes>
+    </test> <!-- Test -->
+</suite> <!-- Functional_Suite -->

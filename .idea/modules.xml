@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CucumberStudyProject/CucumberStudyProject.iml" filepath="$PROJECT_DIR$/CucumberStudyProject/CucumberStudyProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntellijStudyProject.iml" filepath="$PROJECT_DIR$/IntellijStudyProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RestAssuredStudyProject/RestAssuredStudyProject.iml" filepath="$PROJECT_DIR$/RestAssuredStudyProject/RestAssuredStudyProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestNGStudyProject/TestNGStudyProject.iml" filepath="$PROJECT_DIR$/TestNGStudyProject/TestNGStudyProject.iml" />
+    </modules>
+  </component>
+</project>

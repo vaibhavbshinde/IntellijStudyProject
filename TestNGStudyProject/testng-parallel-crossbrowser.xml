@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional_Suite" parallel="tests" thread-count="3">
+    <test name = "ChromeTest">
+        <parameter name="browser" value="chrome"/>
+      <classes>
+          <class name="com.sample.testng.booking.BookFlight"/>
+          <class name="com.sample.testng.booking.BookHolidayPackage"/>
+          <class name="com.sample.testng.booking.BookHotel"/>
+          <class name="com.sample.testng.booking.FlightStatus"/>
+          <class name="com.java.general.study.BubbleSort"/>
+          <class name="com.java.general.study.FibbonacciSeries"/>
+      </classes>
+    </test> <!-- Test -->
+
+    <test name = "FireFoxTest">
+        <parameter name="browser" value="Firefox"/>
+        <classes>
+            <class name="com.sample.testng.booking.BookFlight"/>
+            <class name="com.sample.testng.booking.BookHolidayPackage"/>
+            <class name="com.sample.testng.booking.BookHotel"/>
+            <class name="com.sample.testng.booking.FlightStatus"/>
+            <class name="com.java.general.study.BubbleSort"/>
+            <class name="com.java.general.study.FibbonacciSeries"/>
+        </classes>
+    </test> <!-- Test -->
+
+
+</suite> <!-- Functional_Suite -->

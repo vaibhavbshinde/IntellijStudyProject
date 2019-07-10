@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WheatherForeCast_Suite" parallel="methods" thread-count="2">
+    <!-- Here added listener for below mentioned classes -->
+    <listeners>
+        <!--listener class-name="com.sample.testng.booking.StudyListenerImplementation"></listener-->
+    </listeners>
+
+    <test name = "WheatherForeCastTest" >
+        <!--Now Creating the testng file on package level, so all packages classes should be executed based on the test casses marked as
+         JetAirwaysRegression groups-->
+        <!--
+        <groups>
+            <run>
+                <include name="JetAirwaysRegression"></include>
+            </run>
+        </groups>
+         -->
+
+        <!--  Parameterized test addtion on package or class level -->
+        <!--
+        <parameter name="URL" value="www.spicejet.com"/>
+        <parameter name="UserName" value="admin"/>
+        <parameter name="Pwd" value="nimda"/>
+        -->
+
+        <!--- When the Scope is Package Level -->
+        <!--
+        <packages>
+            <package name="TestAPIRequestExecution"></package>
+            <package name="TestAPIRequestExecution"></package>
+        </packages>
+         -->
+
+        <!--- When the Scope is Class Level -->
+       <classes>
+           <class name="TestAPIRequestExecution.TestCurrentWeatherData"></class>
+           <class name="TestAPIRequestExecution.TestHourlyForeCast"></class>
+
+           <class name ="com.java.general.study.FibbonacciSeries"></class>
+           <class name="com.java.general.study.BubbleSort"></class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- WheatherForeCast_Suite -->

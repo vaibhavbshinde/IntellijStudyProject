@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameterized_Suite">
+    <test name = "Test">
+      <parameter name="URL" value="www.spicejet.com"/>
+      <parameter name="UserName" value="admin"/>
+      <parameter name="Pwd" value="nimda"/>
+      <classes>
+          <class name="com.sample.testng.booking.ParameterizedTestClass"/>
+      </classes>
+    </test> <!-- Test -->
+</suite> <!-- Parameterized_Suite -->

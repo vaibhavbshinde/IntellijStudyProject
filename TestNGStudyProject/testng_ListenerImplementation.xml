@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Listener_Suite">
+    <!-- Here added listener for below mentioned classes -->
+    <listeners>
+        <listener class-name="com.sample.testng.booking.StudyListenerImplementation"></listener>
+    </listeners>
+
+    <test name = "Test">
+      <classes>
+          <class name="com.sample.testng.booking.TestClassUsedForListener1"/>
+          <class name="com.sample.testng.booking.TestClassUsedForListener2"/>
+      </classes>
+    </test> <!-- Test -->
+</suite> <!-- Listener_Suite -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional_Suite">
+    <test name = "Test">
+    <!--Now Creating the testng file on package level, so all packages classes should be executed based on the test casses marked as
+     JetAirwaysRegression groups-->
+    <groups>
+        <run>
+            <include name="JetAirwaysRegression"></include>
+        </run>
+    </groups>
+
+    <packages>
+        <package name="com.sample.testng.booking"></package>
+        <package name="com.onlinecheckin"></package>
+    </packages>
+    </test> <!-- Test -->
+</suite> <!-- Functional_Suite -->
